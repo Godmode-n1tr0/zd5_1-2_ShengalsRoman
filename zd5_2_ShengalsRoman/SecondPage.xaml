@@ -1,0 +1,27 @@
+﻿<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="zd5_2_ShengalsRoman.SecondPage"
+             BackgroundColor="#1E1E1E"
+             Title="Second Page">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="labelStyle" TargetType="Label">
+                <Setter Property="TextColor" Value="White" />
+                <Setter Property="FontSize" Value="20" />
+                <Setter Property="HorizontalOptions" Value="Center" />
+            </Style>
+            <Style x:Key="buttonStyle" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="#F44336" />
+                <Setter Property="TextColor" Value="White" />
+                <Setter Property="Margin" Value="20,10" />
+                <Setter Property="FontAttributes" Value="Bold" />
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <StackLayout VerticalOptions="CenterAndExpand" Spacing="20">
+        <Label x:Name="nameLabel" Style="{StaticResource labelStyle}" />
+        <Button Text="Перейти к подробностям" Style="{StaticResource buttonStyle}" Clicked="OnNextClicked"/>
+    </StackLayout>
+</ContentPage>

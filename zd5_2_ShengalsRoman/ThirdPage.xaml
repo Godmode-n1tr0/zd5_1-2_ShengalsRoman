@@ -1,0 +1,35 @@
+﻿<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="zd5_2_ShengalsRoman.ThirdPage"
+             Title="Info"
+             BackgroundColor="#1E1E1E">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="labelStyle" TargetType="Label">
+                <Setter Property="TextColor" Value="White" />
+                <Setter Property="FontSize" Value="16" />
+            </Style>
+            <Style x:Key="buttonStyle" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="#4CAF50" />
+                <Setter Property="TextColor" Value="White" />
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <StackLayout Padding="20" Spacing="15">
+        <Picker x:Name="infoPicker" Title="Выберите пункт">
+            <Picker.Items>
+                <x:String>Пункт 1</x:String>
+                <x:String>Пункт 2</x:String>
+                <x:String>Пункт 3</x:String>
+            </Picker.Items>
+        </Picker>
+
+        <Slider x:Name="valueSlider" Minimum="0" Maximum="100" Value="50" />
+
+        <Button Text="Static" Style="{StaticResource buttonStyle}" Clicked="OnShowInfoClicked"/>
+
+        <Label x:Name="resultLabel" Style="{StaticResource labelStyle}" />
+    </StackLayout>
+</ContentPage>
