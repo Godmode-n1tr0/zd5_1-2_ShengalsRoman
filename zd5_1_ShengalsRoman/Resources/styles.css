@@ -1,0 +1,38 @@
+﻿^contentpage {
+    background-color: #f0f8ff;
+}
+
+stacklayout {
+    margin: 20px;
+    padding: 10px;
+}
+
+label {
+    color: darkblue;
+    font-size: 16px;
+}
+
+entry {
+    font-size: 14px;
+    background-color: #ffffff;
+}
+
+button {
+    background-color: teal;
+    color: white;
+    font-size: 18px;
+    border-width: 1px;
+    border-color: #008080;
+}
+
+#signinBtn {
+    background-color: darkgreen;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#welcomeLabel {
+    font-size: 22px;
+    color: #004d40;
+}

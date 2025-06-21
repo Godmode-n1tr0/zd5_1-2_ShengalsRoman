@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="zd5_1_ShengalsRoman.WelcomePage"
+             Title="Welcome">
+
+    <ContentPage.Resources>
+        <StyleSheet>
+            <![CDATA[
+                ^contentpage {
+                    background-color: #f0f8ff;
+                }
+
+                label {
+                    color: darkblue;
+                    font-size: 18;
+                }
+
+                entry {
+                    font-size: 16;
+                    background-color: white;
+                }
+
+                button {
+                    background-color: teal;
+                    color: white;
+                    font-size: 18;
+                }
+
+                #signinBtn {
+                    background-color: darkgreen;
+                    font-size: 20;
+                }
+            ]]>
+        </StyleSheet>
+    </ContentPage.Resources>
+    <StackLayout>
+        <Label Text="Введите фамилию:" />
+        <Entry x:Name="surnameEntry" Placeholder="Фамилия" />
+        <Button x:Name="signInBtn" Text="Sign In"
+                Clicked="OnSignInClicked"
+                StyleId="signinBtn" />
+    </StackLayout>
+</ContentPage>
